@@ -1,0 +1,755 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  /* max-width: 144rem; */
+  width: 100%;
+  max-height: 100vh;
+  margin: 0 auto;
+}
+.navbar--container {
+  width: 100%;
+  height: 7rem;
+  background: rgba(0, 0, 0, 0.8);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 14.4rem;
+  position: fixed;
+  left: 0;
+  z-index: 100;
+}
+.icon {
+  margin-bottom: 0.2rem;
+  margin-left: 0.4rem;
+}
+.navbar--menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.6rem;
+}
+.nav--link {
+  text-decoration: none;
+}
+.link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: rgba(255, 255, 255);
+}
+.login--signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.5rem;
+}
+.btn {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: rgba(255, 255, 255, 1);
+}
+.login {
+  padding: 0.2rem 1.1rem;
+  background-color: rgba(216, 114, 52, 0.7);
+  border-radius: 1.5rem;
+  border: 0.2rem solid rgba(216, 114, 52, 1);
+}
+.hero--container {
+  /* width: 151.7rem; */
+  width: 100%;
+  /* background-image: url(./images/steph-curry.png); */
+  background-color: black;
+  height: 70.5rem;
+  /* position: absolute;
+  top: 0;
+  left: 3.9rem; */
+  z-index: 1;
+  overflow: hidden;
+}
+.hero--img {
+  width: 128rem;
+  height: 72rem;
+  position: absolute;
+  top: -1.5rem;
+  right: 0;
+  z-index: 1;
+}
+.hero--logo {
+  position: absolute;
+  top: 13.5rem;
+  left: 14.4rem;
+  z-index: 1;
+}
+.rated {
+  position: absolute;
+  bottom: 4.8rem;
+  right: 4.2rem;
+}
+.container--dots {
+  width: 35.7rem;
+  height: 5.1rem;
+  background-color: rgba(216, 114, 52, 0.2);
+  border-radius: 4rem;
+  position: absolute;
+  bottom: 4.8rem;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8rem 2.7rem;
+}
+.dots {
+  width: 10rem;
+  display: flex;
+  gap: 1rem;
+}
+.section--about {
+  height: 67rem;
+  background-color: rgba(242, 239, 239, 1);
+  display: flex;
+  gap: 14rem;
+  justify-content: center;
+  /* align-items: center; */
+  /* position: absolute;
+  top: 66.2rem;
+  left: 3.9rem; */
+  z-index: -1;
+  padding: 6.4rem 16rem 7.2rem 16rem;
+}
+.mini--header {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  color: rgba(216, 114, 52, 1);
+}
+.orange--line {
+  width: 12.1rem;
+  border: 0.1rem solid rgba(216, 114, 52, 1);
+  margin-top: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+.description--header {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4rem;
+  color: black;
+}
+.description--text {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-top: 2rem;
+}
+
+.image--header {
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 6.6rem;
+}
+.genesys--header {
+  margin-bottom: 3.5rem;
+}
+.studio--img {
+  margin-bottom: 0.9rem;
+}
+.about--link {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: -0.1rem;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: #777;
+  text-transform: uppercase;
+}
+.section--franchise {
+  /* width: 151.7rem; */
+  width: 100%;
+  height: 268rem;
+  /* position: absolute;
+  top: 133.2rem;
+  left: 3.9rem; */
+  background-color: black;
+}
+.discover {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  color: rgba(198, 198, 198, 1);
+  text-align: center;
+  padding-top: 10.8rem;
+}
+.franchise--header {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 6.6rem;
+  color: rgba(216, 114, 52, 1);
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.franchise--options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 13rem;
+  padding: 0rem 29rem 0rem 19.4rem;
+  margin-bottom: 5.5rem;
+}
+.mancat--text--container {
+  color: rgba(255, 255, 255, 1);
+}
+.mancat--basketball {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.learn--more {
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-top: 3rem;
+  color: rgba(216, 114, 52, 1);
+  cursor: pointer;
+}
+.learn--more--border {
+  width: 55.5rem;
+  border: 0.1rem solid rgba(216, 114, 52, 1);
+  margin-top: 0.9rem;
+}
+.franchise--img--container {
+  border: 0.3rem solid white;
+}
+.franchise--img--header {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.25rem;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 0.4rem;
+  text-align: center;
+}
+.section--news--article {
+  width: 100%;
+  height: 163.1rem;
+  /* position: absolute;
+  top: 401.5rem;
+  left: 3.9rem; */
+  background-color: rgba(242, 239, 239, 1);
+}
+.showcase--container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: -7.2rem;
+  overflow: hidden;
+  margin-top: 6.5rem;
+  padding-left: 23rem;
+  /* padding-right: 17rem; */
+}
+.follow--us {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  color: rgba(216, 114, 52, 1);
+  padding-top: 7.2rem;
+  text-align: center;
+}
+.section--news--header {
+  margin-top: rem;
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 6.6rem;
+  color: black;
+  text-align: center;
+}
+.first--article {
+  background-image: url(./images/NEWS\ CARD\ 1.png);
+  width: 46.6rem;
+  height: 62.4rem;
+  position: relative;
+}
+.second--article {
+  background-image: url(./images/NEWS\ CARD\ 2.png);
+  width: 46.6rem;
+  height: 62.4rem;
+  position: relative;
+}
+.third--article {
+  background-image: url(./images/NEWS\ CARD\ 3.png);
+  width: 46.6rem;
+  height: 62.4rem;
+  margin-top: 2rem;
+  position: relative;
+}
+.third--article--image {
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+.fourth--article {
+  background-image: url(./images/NEWS\ CARD\ 4.png);
+  width: 46.6rem;
+  height: 62.4rem;
+  margin-top: 2rem;
+  position: relative;
+}
+.date--news {
+  font-size: 1.9rem;
+  font-weight: 500;
+  color: rgba(198, 198, 198, 1);
+  letter-spacing: -0.15rem;
+  position: absolute;
+  left: 3rem;
+  bottom: 17.8rem;
+}
+.news--text {
+  font-weight: 500;
+  font-size: 2.4rem;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: -0.15rem;
+  position: absolute;
+  left: 3rem;
+  bottom: 9.8rem;
+  width: 36.7rem;
+  height: 6rem;
+}
+.read--more {
+  text-decoration: none;
+  color: rgba(216, 114, 52, 1);
+  font-weight: 500;
+  font-size: 1.9rem;
+  letter-spacing: -0.15rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 3rem;
+}
+.btn--read--more {
+  width: 109rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 26rem;
+  margin-top: 4.1rem;
+  border: 0.3rem solid rgba(216, 114, 52, 1);
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: rgba(216, 114, 52, 1);
+  line-height: 3rem;
+}
+.section--explore {
+  /* width: 151.7rem; */
+  width: 100%;
+  height: 67rem;
+  /* position: absolute;
+  top: 564.6rem;
+  left: 3.9rem; */
+  background-color: black;
+}
+.section--explore {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 19.6rem;
+}
+.explore--header {
+  font-weight: 600;
+  font-size: 2.4rem;
+  color: rgba(216, 114, 52, 1);
+  margin-top: 6.4rem;
+}
+.explore--line {
+  width: 12.1rem;
+  margin-top: 0.95rem;
+  border: 0.2rem solid rgba(216, 114, 52, 1);
+}
+.explore--main--text {
+  font-weight: 700;
+  font-size: 6rem;
+  color: white;
+  margin-bottom: 3.3rem;
+  width: 55.2rem;
+}
+.explore--text--content {
+  margin-left: 10rem;
+  padding-right: 19rem;
+}
+.text--content--main--text {
+  color: white;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4.25rem;
+  margin-top: 10.5rem;
+}
+.explore--text {
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-top: 3rem;
+  color: white;
+  height: 13.8rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+.section--team {
+  /* width: 151.7rem; */
+  width: 100%;
+  height: 38.9rem;
+  background-color: rgba(242, 239, 239, 1);
+  /* position: absolute;
+  top: 631.6rem;
+  left: 3.9rem; */
+  display: flex;
+  justify-content: space-between;
+  gap: 20.7rem;
+  padding-top: 5.7rem;
+  padding-left: 19.7rem;
+  padding-right: 8.2rem;
+}
+.team--text--content {
+  width: 39.8rem;
+}
+.team--header {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.25rem;
+  color: rgba(216, 114, 52, 1);
+}
+.team--text {
+  font-weight: 600;
+  font-size: 2.4rem;
+  color: black;
+  margin-top: 2rem;
+  margin-bottom: 2.6rem;
+  line-height: 1.5;
+}
+.visit--site {
+  padding: 1.1rem 6.6rem;
+  text-decoration: none;
+  border: 0.3rem solid rgba(216, 114, 52, 1);
+  border-radius: 4rem;
+  font-size: 2.4rem;
+  letter-spacing: -0.05rem;
+  font-weight: 700;
+  color: rgba(216, 114, 52, 1);
+}
+.image--team--collage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 59.7rem;
+}
+.name--personnel {
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+}
+.job--service {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.4rem;
+  text-align: center;
+  width: 10rem;
+  position: absolute;
+  bottom: -2rem;
+  left: 3.8rem;
+  color: rgba(216, 114, 52, 1);
+}
+.personnel {
+  position: relative;
+  margin-left: -3rem;
+  margin-top: 2.2rem;
+}
+.job {
+  position: absolute;
+  bottom: -3rem;
+}
+.section--opening {
+  /* width: 151.7rem; */
+  width: 100%;
+  height: 67rem;
+  /* position: absolute;
+  top: 670.5rem;
+  left: 3.9rem; */
+  background-color: black;
+  padding-top: 6.7rem;
+  padding-left: 27rem;
+}
+.opening--header {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3rem;
+  color: rgba(216, 114, 52, 1);
+}
+.join--header {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 6.6rem;
+  color: white;
+  margin-bottom: 2.9rem;
+}
+.team--options {
+  position: relative;
+}
+.team--options img {
+  margin-bottom: 3.1rem;
+}
+.department {
+  position: absolute;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: rgba(216, 114, 52, 1);
+  top: 1.8rem;
+  left: 4rem;
+}
+.administration {
+  position: absolute;
+  width: 21.8rem;
+  line-height: 0.8;
+  font-weight: 700;
+  font-size: 2rem;
+  padding-bottom: 1.8rem;
+  top: 5rem;
+  left: 4rem;
+}
+.right--side {
+  position: absolute;
+  top: 1.8rem;
+  left: 80rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: rgba(216, 114, 52, 1);
+}
+.right--admin {
+  position: absolute;
+  width: 10rem;
+  line-height: 1;
+  font-weight: 700;
+  font-size: 2rem;
+  padding-bottom: 1.8rem;
+  top: 5rem;
+  left: 80rem;
+  color: white;
+}
+footer {
+  /* width: 151.7rem; */
+  width: 100%;
+  height: 44.5rem;
+  /* position: absolute;
+  top: 737.5rem;
+  left: 3.9rem; */
+  background-color: rgba(229, 215, 189, 1);
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5rem;
+  padding-left: 12rem;
+  position: relative;
+}
+
+.footer--header {
+  font-weight: 700;
+  font-size: 2.4rem;
+  text-decoration: underline;
+  margin-bottom: 3.1rem;
+}
+.social--handles {
+  display: flex;
+  gap: 1rem;
+}
+.links--footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.links--footer a {
+  color: black;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.back--to--top {
+  position: relative;
+}
+.img--top {
+  margin-top: 11rem;
+  margin-right: 11rem;
+  cursor: pointer;
+}
+.back--top--text {
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+  position: absolute;
+  bottom: 19rem;
+  left: 2.2rem;
+  color: rgba(216, 114, 52, 1);
+  font-size: 1.5rem;
+}
+.recon {
+  position: relative;
+}
+.ares {
+  position: relative;
+}
+.ares--logo {
+  position: absolute;
+  top: 1.5rem;
+  left: 3.6rem;
+}
+.recon--logo {
+  position: absolute;
+  top: 3.5rem;
+  left: 4rem;
+}
+.mature {
+  position: absolute;
+  bottom: 16.8rem;
+  left: 12rem;
+}
+.everyone {
+  position: absolute;
+  bottom: 16.8rem;
+  left: 21rem;
+}
+.image--18 {
+  width: 5.5rem;
+  height: 6.7rem;
+  position: absolute;
+  bottom: 16.8rem;
+  left: 26.3rem;
+}
+.footer--logo {
+  position: absolute;
+  bottom: 3.7rem;
+  left: 65rem;
+}
+.copyright {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: black;
+  position: absolute;
+  left: 65rem;
+  bottom: 1.5rem;
+}
+.form {
+  width: 50rem;
+  height: 50rem;
+  position: absolute;
+  background-color: white;
+  /* background-color: black; */
+  top: 13rem;
+  left: 55rem;
+  z-index: 100;
+  padding: 3.6rem 6.4rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem 1rem rgba(0, 0, 0, 0.8);
+}
+.signin--signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.6rem;
+  position: relative;
+
+  margin-bottom: 3.6rem;
+  cursor: pointer;
+}
+.form--logo {
+  margin-left: 4.6rem;
+}
+.form--header {
+  font-weight: 800;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+/* .login--side {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: rgba(216, 114, 52, 1);
+  text-decoration-thickness: 0.3rem;
+} */
+.username {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.password {
+  display: block;
+  font-size: 1.6rem;
+}
+.input {
+  padding: 1.4rem 1.2rem;
+  margin-bottom: 2rem;
+  width: 30rem;
+  margin-left: 3rem;
+  font-weight: 500;
+  border-radius: 2rem;
+  border: 0.1rem solid #777;
+}
+.input::placeholder {
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding-top: 0.4rem;
+}
+label {
+  font-size: 1.4rem;
+  margin-left: 1.4rem;
+  user-select: none;
+  color: #555;
+  cursor: pointer;
+}
+.login--access {
+  display: block;
+  padding: 1.6rem 1.6rem;
+  width: 29.8rem;
+  margin-left: 3rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+  background-color: rgba(216, 114, 52, 1);
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.login--access:hover {
+  background-color: rgba(216, 114, 52, 0.7);
+}
+.checkbox {
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+.container {
+  transition: filter 0.2s ease;
+}
+.active--left--line {
+  height: 0.2rem;
+  width: 7.2rem;
+  background-color: rgba(216, 114, 52, 0.7);
+  position: absolute;
+  top: 4.8rem;
+  left: 10.2rem;
+  transition: all 0.2s ease;
+}
+.active--right--line {
+  height: 0.2rem;
+  width: 7.2rem;
+  background-color: rgba(216, 114, 52, 0.7);
+  position: absolute;
+  top: 4.8rem;
+  left: 19rem;
+  transition: all 0.2s ease;
+}
+.confirm--password::placeholder {
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding-top: 0.4rem;
+}
